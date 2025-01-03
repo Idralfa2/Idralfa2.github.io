@@ -1,0 +1,251 @@
+
+
+.navbar {
+  position: fixed; 
+  top: 0;      
+  left: 0;
+  width: 100%;    
+  background-color: #043242; 
+  padding: 10px 0; 
+  z-index: 1000; 
+  text-align: center;
+  height: 40px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none; 
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 16px;  
+}
+
+.navbar a:hover {
+  background-color: #46C3CE; 
+  border-radius: 5px; 
+}
+
+.navbar-custom {
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  background-color: #043242; 
+  padding: 10px 0;
+  z-index: 1000;   
+  text-align: center;
+}
+
+.navbar-custom a {
+  color: white;   
+  text-decoration: none;
+  padding: 10px 20px; 
+  display: inline-block; 
+  font-size: 16px;  
+}
+
+.navbar-custom a:hover {
+  background-color: #46C3CE; 
+  border-radius: 5px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin-right: 0;
+  display: inline;
+}
+
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+
+
+body {
+  background: url('images/fond.jpg') no-repeat center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  color: white;
+  text-align: center;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Urban, sans-serif;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+* {
+  max-width: 100%;
+}
+
+
+header {
+  background-color: #043242;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+}
+
+.police {
+  font-family: "Lacquer", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sous-titre {
+  position: fixed;
+  bottom: 150%; 
+  left: -140%;
+  color: #ffffff;
+  font-size: 10vw; 
+}
+
+.auteur {
+  position: fixed;
+  top:10%;
+  right: 3%;
+  font-size: 5vh;
+  color: #ffffff;
+}
+
+.section {
+  background-color: #043242;
+  color: white;
+  text-align: center;
+  padding: 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+}
+
+.mail a {
+  position: absolute; 
+  left: 50px;   
+  bottom:20%;    
+  padding-left: 0px;    
+  font-size: 30px;  
+  color: white;
+  white-space: nowrap; 
+}
+
+.mentions {
+  position: absolute; 
+  bottom: 0;     
+  right: 50px;          
+  padding: 5px;     
+  font-size: 14px;   
+}
+
+nav ul li a:active {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+}
+
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+}
+
+.social-icon {
+  width: 40px; 
+  height: 40px; 
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1); 
+  opacity: 0.8; 
+}
+
+
+.fade-item {
+  opacity: 0;
+  transition: opacity 1s ease, transform 1s ease; 
+}
+
+
+.fade-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.CV {
+  all: unset;
+  position: fixed; 
+top: 1000px;
+  left:35%;
+  width: 30%; 
+
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
+  text-align: center; 
+  z-index: 1000; 
+
+}
+
+
+
+.fade-out-container {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #043242;
+  color: white;
+  padding: 0px;
+  transition: opacity 0.5s ease; 
+}
+
+h1{
+  all: unset;
+  position: fixed;
+  grid: center;
+  top: 900px;
+  left:43%;
+  font-size: 75px;
+}
+
+h2{
+  all: unset;
+  position: fixed;
+  grid: center;
+  top: 50px;
+  left:30%;
+  font-size: 75px;
+}
+
+h3{
+
+  position: fixed;
+  grid: center;
+  top: 0%;
+  left:38%;
+  font-size: 75px;
+}
+
+
+.ppp{
+  font-size: medium;
+  position: fixed;
+  top: 200px;
+  left:3%;
+  right: 3%;
+  font-size: 30px;
+}
