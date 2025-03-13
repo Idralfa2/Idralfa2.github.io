@@ -1,0 +1,72 @@
+<!-- projet-professionnel.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Projet Professionnel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loader-overlay">
+        <div class="loader"></div>
+    </div>
+    <header>
+        <h1>Mon Projet Professionnel</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="cv.html">Mon CV</a></li>
+                <li><a href="interets.html">Centres d'Intérêts</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="projet-professionnel.html">Projet Professionnel</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        Mon projet personnel et professionnel s'inscrit dans une démarche progressive et cohérente visant à construire une carrière solide dans le domaine de l’informatique, avec une spécialisation dans la Big Data. </br> </br> Actuellement étudiant en IUT Informatique, je suis déterminé à acquérir des compétences techniques et pratiques qui me permettront de me distinguer dans ce secteur en pleine expansion. </p>
+
+      <p>Mon premier objectif est de réussir ma première année d’IUT en consolidant mes connaissances de base en programmation, en systèmes informatiques et en gestion de projets.</p>
+
+      <p> À partir de ma deuxième année, je prévois de suivre ma formation en alternance. Cette approche me permettra de combiner apprentissage théorique et expérience professionnelle concrète. </br> </br>
+      Je vise à intégrer une entreprise évoluant dans le domaine de l’informatique ou des données, où je pourrai contribuer à des projets tout en renforçant mes compétences techniques, notamment en développement, en gestion de bases de données, et en analyse de données.</p>
+      
+      <p> Au cours des trois années du BUT, je souhaite approfondir mes compétences en programmation avancée, en intelligence artificielle, en architecture logicielle, et en gestion de projets.
+      Une attention particulière sera portée à l’analyse et la gestion des données, car elles constituent le cœur de mon projet professionnel.</p>
+      
+      <p> Mon objectif est de valider mon BUT Informatique avec une mention, en capitalisant sur l’expérience acquise en entreprise grâce à l’alternance.
+      Objectifs à Long Terme : Intégrer une École d’Ingénieurs et Se Spécialiser dans la Big Data</p>
+      
+      <p> Après l’obtention de mon BUT, je prévois d’intégrer une école d’ingénieurs spécialisée en informatique ou en data science.
+      Cette formation me permettra de développer des compétences approfondies dans la gestion de grands volumes de données (Big Data), l’apprentissage automatique (Machine Learning), et les infrastructures nécessaires à leur traitement (cloud computing, clusters).</p>
+      
+
+      <p> Mon objectif est de travailler en tant qu’ingénieur spécialisé dans la Big Data, que ce soit dans une grande entreprise, une startup innovante, ou même à mon compte. Je souhaite contribuer à des projets qui exploitent la puissance des données pour améliorer la prise de décision, optimiser des processus, ou créer des solutions novatrices dans des domaines variés comme la santé, la finance, ou les transports.</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 - Flavien Grihard - Tous droits réservés</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const loader = document.querySelector(".loader-overlay");
+            setTimeout(() => {
+                loader.classList.add("hidden");
+            }, 800); // Temps d'affichage du loader
+        
+            document.querySelectorAll("a").forEach(link => {
+                link.addEventListener("click", function(event) {
+                    if (this.getAttribute("href").startsWith("#")) return;
+                    event.preventDefault();
+                    const href = this.getAttribute("href");
+                    document.body.classList.add("fade-out");
+                    setTimeout(() => {
+                        window.location.href = href;
+                    }, 500);
+                });
+            });
+        });
+        </script>
+</body>
+</html>
