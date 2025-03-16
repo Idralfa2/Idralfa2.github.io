@@ -53,9 +53,10 @@ h3 {
     text-transform: uppercase;
 }
 
-h4 {
+h2 {
     color: #ff9800;
     text-transform: uppercase;
+    margin-bottom: 10px; /* Ajoute un espace sous chaque titre */
 }
 
 .CV img {
@@ -498,12 +499,9 @@ html, body {
   footer p {
     font-size: 1rem;
   }
+  
 
-
-h4 {
-    margin-bottom: 10px; 
-}
 
 p {
-    margin-bottom: 20px; 
+    margin-bottom: 20px; /* Ajoute un espace entre chaque paragraphe */
 }
